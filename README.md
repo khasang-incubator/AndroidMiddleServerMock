@@ -5,6 +5,9 @@
 ###Base URL
 http://109.234.34.97:4000/
 
+###Entity Models
+https://gist.github.com/AndX2/1aad6667dbd461c30e11b69289e29b66
+
 ###Access
 All requests should be contains header "token". Only request "/api/goods/" without "token" header return goods list and token new User with role=guest. This token need save on client. This insert for requests for identification user on service.
 Token structure: {version}&{Id user}&{random field}. You can get IdUser from token.
