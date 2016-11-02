@@ -40,7 +40,7 @@ POST http://109.234.34.97:4000/api/goods/ JSON model Good. Fields "title", "desc
 }
 
 ###Upload images.
-JSON model of upload good desirable to provide array of images. Service supports upload, resizing an hosting images and thumbnail. You need POST http://109.234.34.97:4000/api/upload/ with field "uploaded_file" contains file image (ext JPG only). Request should be signed header "token". Response will contains BASE_NAME this image on hosting. For get resize image ask: http://109.234.34.97:4000/s-BASE_NAME. For get thumbnail ask: ask: http://109.234.34.97:4000/m-BASE_NAME. Note: uploaded images that are not referenced by any item will be removed (delay a few hours).
+JSON model of upload good desirable to provide array of images. Service supports upload, resizing an hosting images and thumbnail. You need POST http://109.234.34.97:4000/api/upload/ with field "uploaded_file" contains file image (ext JPG only). Request should be signed header "token". Response will contains BASE_NAME this image on hosting. For get resize image ask: http://109.234.34.97:4000/s-BASE_NAME. For get thumbnail ask: http://109.234.34.97:4000/m-BASE_NAME. Note: uploaded images that are not referenced by any item will be removed (delay a few hours).
 
 ###Update and delete goods. 
 User good owner can update (PUT) and remove (DELETE) his goods just send PUT http://109.234.34.97:4000/api/goods/{id} or DELETE http://109.234.34.97:4000/api/goods/{id}. PUT request shoulds contains valid JSON model Good. Request should be signed header "token" owner this good! 
